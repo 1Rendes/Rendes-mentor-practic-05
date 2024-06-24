@@ -9,4 +9,5 @@ export const refs = {
   recipes: '',
   applyFilter: document.querySelector('.filter'),
   theme: document.querySelector('.theme'),
+  pathToIcons: './img/icons.svg',
 };

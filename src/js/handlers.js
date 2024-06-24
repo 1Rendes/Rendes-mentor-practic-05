@@ -11,13 +11,13 @@ export function onClickChangeTheme(e) {
     saveToLS('theme', 'dark');
     refs.theme.innerHTML = `
       <svg class="moon" height="30" width="30">
-        <use href="./img/icons.svg#moon"></use>
+        <use href="${refs.pathToIcons}#moon"></use>
       </svg>`;
   } else {
     saveToLS('theme', 'white');
     refs.theme.innerHTML = `
       <svg class="sun" height="30" width="30">
-        <use href="./img/icons.svg#sun"></use>
+        <use href="${refs.pathToIcons}#sun"></use>
       </svg>`;
   }
 }

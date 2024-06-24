@@ -8,7 +8,7 @@ export function onLoadedDomTheme() {
     refs.modal.classList.toggle('dark-theme');
     refs.theme.innerHTML = `
       <svg class="moon" height="30" width="30">
-        <use href="./img/icons.svg#moon"></use>
+        <use href="${refs.pathToIcons}#moon"></use>
       </svg>`;
   }
 }
