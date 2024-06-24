@@ -1,3 +1,5 @@
+import pathIcons from '../img/icons.svg';
+
 export const refs = {
   recipesList: document.querySelector('.recipes'),
   bodyEl: document.querySelector('body'),
@@ -9,5 +11,5 @@ export const refs = {
   recipes: '',
   applyFilter: document.querySelector('.filter'),
   theme: document.querySelector('.theme'),
-  pathToIcons: '../img/icons.svg',
+  pathToIcons: pathIcons,
 };
