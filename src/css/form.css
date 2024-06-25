@@ -33,20 +33,46 @@
 .submit:hover {
   background: #6c8cff;
 }
-.forms {
-  display: flex;
-  gap: 40px;
-}
 .form {
   display: flex;
   align-items: center;
   gap: 20px;
   height: 40px;
-  padding: 30px 0 30px 0;
+  padding: 15px 0 15px 0;
   max-width: 850px;
 }
 .filter {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.header {
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.checbox-group {
+  position: fixed;
+  top: 70px;
+  right: calc((100% / 2) - 300px);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.filter-anchor {
+  height: 70px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-anchor:hover ~ .checbox-group {
+  background-color: black;
+}
+.checbox-group:hover {
+  background-color: black;
 }

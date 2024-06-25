@@ -5,6 +5,9 @@ import { refs } from './refs';
 export async function findFood(e) {
   e.preventDefault();
   const query = e.target.elements.query.value.trim();
+  if (!query) {
+    return alert('Search request must not be blank');
+  }
   const { recipes } = await getRecepieByQuery(query);
   refs.recipes = recipes;
   if (recipes.length) {

@@ -10,6 +10,11 @@ body {
 .dark-theme {
   background-color: #242424;
   color: white;
+}
+.header.dark-theme {
+  background-color: rgba(99, 99, 99, 0.7);
+}
+.dark-theme svg {
   fill: white;
 }
 

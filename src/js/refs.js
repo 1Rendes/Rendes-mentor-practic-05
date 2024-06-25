@@ -12,4 +12,5 @@ export const refs = {
   applyFilter: document.querySelector('.filter'),
   theme: document.querySelector('.theme'),
   pathToIcons: pathIcons,
+  header: document.querySelector('.header'),
 };
