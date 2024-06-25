@@ -15,23 +15,28 @@
                   <use href="./img/icons.svg#home"></use>
                 </svg>
           </a>
+          <span class="search-butt">
+              <svg class="search-icon" height="30" width="30">
+                  <use href="./img/icons.svg#find"></use>
+              </svg>
+          </span>
         <form class="form">
           <input type="text" class="query" name="query" placeholder="Search recipes">
           <button type="submit" name="submit" class="submit">Search</button>
+          <input id="switch-theme" name="switch-theme" type="checkbox"/>
+      </form>
           <label for="switch-theme" class="theme">
                 <svg class="sun" height="30" width="30">
                   <use href="./img/icons.svg#sun"></use>
                 </svg>
           </label>
-          <input id="switch-theme" name="switch-theme" type="checkbox"/>
-      </form>
         <form class="filter" >
-            <span href="" class="filter-anchor">
+            <span class="filter-anchor">
               <svg class="filter-icon" height="30" width="30">
                   <use href="./img/icons.svg#filter"></use>
               </svg>
             </span>
-                  <div class="checbox-group">
+                  <div class="checkbox-group">
                   <div>
                   <input id="easy" type="checkbox" class="difficulty-el" name="easy" value="Easy">
                   <label for="easy" class="country">Easy</label>

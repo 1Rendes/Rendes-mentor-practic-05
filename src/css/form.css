@@ -1,3 +1,10 @@
+.home {
+  height: 30px;
+  transition: scale 250ms ease-in-out;
+}
+.home:hover {
+  scale: 1.5;
+}
 .query {
   margin: 0;
   box-sizing: border-box;
@@ -33,18 +40,83 @@
 .submit:hover {
   background: #6c8cff;
 }
-.form {
+.search-butt {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 30px;
+  transition: scale 250ms ease-in-out;
+}
+.search-butt:hover {
+  scale: 1.5;
+}
+.search-butt:hover ~ .form {
+  transform: translate(-50%, 70px);
+  z-index: 0;
   display: flex;
   align-items: center;
   gap: 20px;
   height: 40px;
   padding: 15px 0 15px 0;
-  max-width: 850px;
+  pointer-events: auto;
+  opacity: 1;
 }
-.filter {
+@media (max-width: 767px) {
+  .form:hover {
+    transform: translate(-50%, 70px);
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    padding: 15px 0 15px 0;
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-butt {
+    display: none;
+    position: absolute;
+  }
+}
+.form {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  width: 300px;
+  padding: 10px;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .form {
+    position: static;
+    z-index: 0;
+    transform: translate(0, 0);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    padding: 15px 0 15px 0;
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+.filter-anchor {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: scale 250ms ease-in-out;
+}
+.filter-anchor:hover {
+  scale: 1.5;
 }
 .header {
   z-index: 1;
@@ -56,23 +128,39 @@
   justify-content: center;
   width: 100%;
 }
-.checbox-group {
+.checkbox-group {
+  z-index: -1;
   position: fixed;
-  top: 70px;
-  right: calc((100% / 2) - 300px);
+  top: 0px;
+  right: calc(50% - 160px);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
+@media (min-width: 768px) {
+  .checkbox-group {
+    right: calc(50% - 300px);
+  }
+}
+
 .filter-anchor {
   height: 70px;
-  width: 50px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.filter-anchor:hover ~ .checbox-group {
-  background-color: black;
+.filter-anchor:hover ~ .checkbox-group {
+  transform: translateY(70px);
+  opacity: 1;
+  pointer-events: auto;
 }
-.checbox-group:hover {
-  background-color: black;
+.checkbox-group:hover {
+  transform: translateY(70px);
+  opacity: 1;
+  pointer-events: auto;
 }

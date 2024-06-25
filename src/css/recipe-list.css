@@ -1,6 +1,7 @@
 .recipes {
   padding-top: 100px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 }

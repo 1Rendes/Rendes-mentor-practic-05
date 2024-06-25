@@ -8,6 +8,7 @@ export function onClickChangeTheme(e) {
   refs.bodyEl.classList.toggle('dark-theme');
   refs.modal.classList.toggle('dark-theme');
   refs.header.classList.toggle('dark-theme');
+  refs.checkboxGroup.classList.toggle('dark-theme');
   if (refs.bodyEl.classList.contains('dark-theme')) {
     saveToLS('theme', 'dark');
     refs.theme.innerHTML = `

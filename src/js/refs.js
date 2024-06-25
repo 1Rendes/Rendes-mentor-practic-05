@@ -13,4 +13,5 @@ export const refs = {
   theme: document.querySelector('.theme'),
   pathToIcons: pathIcons,
   header: document.querySelector('.header'),
+  checkboxGroup: document.querySelector('.checkbox-group'),
 };

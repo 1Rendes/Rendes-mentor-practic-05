@@ -14,6 +14,9 @@ body {
 .header.dark-theme {
   background-color: rgba(99, 99, 99, 0.7);
 }
+.checkbox-group.dark-theme {
+  background-color: rgba(99, 99, 99, 0.7);
+}
 .dark-theme svg {
   fill: white;
 }
@@ -24,4 +27,8 @@ body {
 .theme {
   box-sizing: border-box;
   height: 30px;
+  transition: scale 250ms ease-in-out;
+}
+.theme:hover {
+  scale: 1.5;
 }
