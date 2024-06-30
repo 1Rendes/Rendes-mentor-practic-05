@@ -4,6 +4,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+  padding-bottom: 25px;
+}
+.hidden {
+  display: none;
 }
 .recipe-item {
   box-sizing: border-box;
@@ -33,5 +37,5 @@
 }
 
 .empty-result {
-  height: 100vh;
+  height: 80vh;
 }

@@ -3,7 +3,7 @@ import axios from 'axios';
 axios.defaults.baseURL = 'https://dummyjson.com/recipes';
 
 export async function getAllRecipies() {
-  const { data } = await axios('');
+  const { data } = await axios('', { params: { limit: 50 } });
   return data;
 }
 

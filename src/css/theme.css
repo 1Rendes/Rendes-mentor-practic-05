@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   transition: background-color 270ms linear;
-  padding-bottom: 50vh;
+  padding-bottom: 25px;
 }
 .dark-theme li {
   border: 1px solid white;

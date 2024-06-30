@@ -9,9 +9,12 @@ export const refs = {
   modal: document.querySelector('.modal'),
   parcing: document.querySelector('.parcing'),
   recipes: '',
+  filtered: '',
   applyFilter: document.querySelector('.filter'),
   theme: document.querySelector('.theme'),
   pathToIcons: pathIcons,
   header: document.querySelector('.header'),
   checkboxGroup: document.querySelector('.checkbox-group'),
+  loadMoreBtn: document.querySelector('#loadMore'),
+  currentPage: 1,
 };

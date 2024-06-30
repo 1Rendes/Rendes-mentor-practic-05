@@ -4,6 +4,7 @@ import {
   onClickChangeTheme,
   onDomContentLoaded,
   onFilterActivate,
+  onShowMoreClick,
 } from './js/handlers';
 import { onRecipeClick } from './js/modal';
 import { refs } from './js/refs';
@@ -15,3 +16,4 @@ document.addEventListener('click', onRecipeClick);
 refs.form.addEventListener('submit', findFood);
 refs.switchEl.addEventListener('click', onClickChangeTheme);
 refs.applyFilter.addEventListener('change', onFilterActivate);
+refs.loadMoreBtn.addEventListener('click', onShowMoreClick);
